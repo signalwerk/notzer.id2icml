@@ -1,0 +1,30 @@
+{
+  "name": "notzer.id2icml",
+  "version": "1.0.0",
+  "description": "Some base abstractions on top of InDesigns JavaScript API",
+  "main": "index.js",
+  "scripts": {
+    "babel": "extendscriptr --script src/index.js --output ./build/exportICML.jsx",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "chokidar \"./src/**/*.js\" -c \"npm run babel\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/signalwerk/indesign.base.git"
+  },
+  "keywords": [
+    "Adobe",
+    "InDesign"
+  ],
+  "author": "Stefan Huber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/signalwerk/indesign.base/issues"
+  },
+  "homepage": "https://github.com/signalwerk/indesign.base#readme",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.1",
+    "extendscriptr": "^1.2.1",
+    "watch": "^1.0.2"
+  }
+}
